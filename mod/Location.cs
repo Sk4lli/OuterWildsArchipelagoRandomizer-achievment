@@ -1108,6 +1108,26 @@ public enum Location
     SLF__EH_PHOSPHORS_X1,
     SLF__EH_PHOSPHORS_X2,
     SLF__EH_PHOSPHORS_X3,
+
+    // Achievemnt+ locations
+    // Base game Achievments
+    ACHIEVEMENT_TERRIBLE_FATE
+    ACHIEVEMENT_WHATS_THIS_BUTTON
+    ACHIEVEMENT_ALPHA_PILOT
+    ACHIEVEMENT_YOUR_TRIED
+    ACHIEVEMENT_GONE_IN_60_SECONDS
+    ACHIEVEMENT_BEGINNERS_LUCK
+    ACHIEVEMENT_RIDGEBODY
+    ACHIEVEMENT_HEARTH_TO_MOON
+    ACHIEVEMENT_DEEP_IMPACT
+    ACHIEVEMENT_HARMONIC_CONVERGENCE
+    ACHIEVEMENT_MUSEUM
+    ACHIEVEMENT_DIE_HARD
+    ACHIEVEMENT_PCHOOOO
+    ACHIEVEMENT_CARCINOGENS
+    ACHIEVEMENT_CUTTING_IT_CLOSE
+    ACHIEVEMENT_MICAS_WRATH
+    ACHIEVEMENT_STUDIOUS
 };
 
 public static class LocationNames
@@ -2123,6 +2143,27 @@ public static class LocationNames
         { Location.SLF__EH_PHOSPHORS_X1, "EH Ship Log: Phosphor Shoal 1 - Phosphors" },
         { Location.SLF__EH_PHOSPHORS_X2, "EH Ship Log: Phosphor Shoal 2 - Planet" },
         { Location.SLF__EH_PHOSPHORS_X3, "EH Ship Log: Phosphor Shoal 3 - Thanks" },
+
+        //Achievment+
+        //Base game Achiements
+        { Location.ACHIEVEMENT_TERRIBLE_FATE, "You've met a terrible fate." },
+        { Location.ACHIEVEMENT_WHATS_THIS_BUTTON, "Hey, what's this button do?" },
+        { Location.ACHIEVEMENT_ALPHA_PILOT, "Hostshot" },
+        { Location.ACHIEVEMENT_YOUR_TRIED, "It was worth a shot." },
+        { Location.ACHIEVEMENT_GONE_IN_60_SECONDS, "Gone in 60 Seconds" },
+        { Location.ACHIEVEMENT_BEGINNERS_LUCK, "Beginner's Luck" },
+        { Location.ACHIEVEMENT_RIDGEBODY, "Ridgedbody" },
+        { Location.ACHIEVEMENT_HEARTH_TO_MOON, "From the Hearth to the Moon" },
+        { Location.ACHIEVEMENT_DEEP_IMPACT, "Deep Impact" },
+        { Location.ACHIEVEMENT_HARMONIC_CONVERGENCE, "Harmonic Convergence" },
+        { Location.ACHIEVEMENT_MUSEUM, "It belongs in a Museum!" },
+        { Location.ACHIEVEMENT_DIE_HARD, "Die Hard" },
+        { Location.ACHIEVEMENT_PCHOOOO, "Pchooooooo!" },
+        { Location.ACHIEVEMENT_CARCINOGENS, "Mmmm, Carcinogens..." },
+        { Location.ACHIEVEMENT_CUTTING_IT_CLOSE, "Cutting it Close" },
+        { Location.ACHIEVEMENT_MICAS_WRATH, "Micas's Wrath" },
+        { Location.ACHIEVEMENT_STUDIOUS, "Archaeologist" },
+        
     };
 
     public static Dictionary<string, Location> locationNamesReversed = locationNames.ToDictionary(ln => ln.Value, ln => ln.Key);
@@ -2138,7 +2179,7 @@ public static class LocationNames
     };
     public static Dictionary<Location, string> locationToFrequency = frequencyToLocation.ToDictionary(ftl => ftl.Value, ftl => ftl.Key);
 
-    public static Dictionary<string, Location> signalToLocation = new Dictionary<string, Location>{
+        public static Dictionary<string, Location> signalToLocation = new Dictionary<string, Location>{
         { "Traveler_Chert", Location.ET_DRUM },
         { "Traveler_Esker", Location.AR_WHISTLE },
         { "Traveler_Riebeck", Location.BH_BANJO },
